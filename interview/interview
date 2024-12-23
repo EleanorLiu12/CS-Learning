@@ -1,0 +1,33 @@
+interview
+
+SELECT nationality, COUNT(id) AS count_id
+FROM A
+GROUP BY nationality
+ORDER BY count_id DESC;
+
+
+public static String reverse (String s) {
+	String ret = ""; // Stringbuilder ret = new Stringbuilder
+	for (int i = s.length() - 1; i >= 0; i--) {
+		ret.append(s.charAt(i)); // ret += s.charAt(i)
+	}
+	return ret; // returen ret.toString();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

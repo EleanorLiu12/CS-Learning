@@ -1,0 +1,9 @@
+dot commands
+
+Commands:
+
+	dot -Tsvg campus.dot -O
+
+	https://pages.cs.wisc.edu/~kejun/hello-world.html
+
+	scp * kejun@best-linux.cs.wisc.edu:~/public/html/

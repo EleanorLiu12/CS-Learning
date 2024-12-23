@@ -1,0 +1,20 @@
+Create a new repo
+
+	cd path/to/your/local/folder
+
+	git init
+
+	git add .
+
+	git commit -m "Initial commit"
+
+	git remote add origin https://github.com/your-username/your-repo.git
+
+	git remote set-url origin https://github.com/EleanorLiu12/University-Projects.git
+
+
+	git push -u origin main
+
+
+
+

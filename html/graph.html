@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Shortest Path Search</title>
+		<meta name="author" contact="Florian Heimerl" />
+		<script>
+			function buttonClicked() {
+				console.log("Button clicked...");	
+				let startlocation = document.querySelectorAll("#start")[0].value
+				let endlocation = document.querySelectorAll("#end")[0].value
+				console.log("start location: " + startlocation);
+				console.log("start location: " + endlocation);
+				
+				let result = "<h3>Shortest Path (placeholder frontend):</h3> +
+					"<ul>" + 
+					"<li>" + startlocation + "</li>" +
+					"<li>Placeholder</li>" +
+					"<li>" + endlocation + "</li>"
+					"</ul>";
+				
+				document.querySelectorAll("#result")[0].innerHTML = results;
+			}
+		</script>
+	</head>
+	<body>
+		<h1>Shortest Path Search</h1>
+		<label>start location:</label>	
+		<input id="start" type="text" placeholder="start location" />
+		<br /><br />
+		<label>end location:</label>
+		<input id="end" type="text" placeholder="end location" />
+		<br /><br />
+		<input type="button" value="Start Search" onclick="buttonClicked() />
+		<br /><br />
+		<div id="result">
+		</div>
+	</body>
+</html>

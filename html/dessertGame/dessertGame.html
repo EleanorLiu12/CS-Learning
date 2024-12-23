@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <title>Dessert in the Desert Browser Game</title>
+    <style>
+      button {
+        color: blanchedalmond;
+        background-color: chocolate;
+        border-color: chocolate;
+        position: absolute;
+        font-size: 16px; /* Set text size to 16px */
+        border-radius: 8px; /* Add rounded corners */
+      }
+    
+      button:hover {
+        color: chocolate; /* Swap text and background colors */
+        background-color: blanchedalmond;
+      }
+    
+      body {
+        background-color: SandyBrown;
+      }
+    
+      p {
+        font-weight: 800; /* Make "Score: 0" text bold */
+      }
+    </style>
+    
+    <script>
+      let score = 0; // Initialize score variable
+      function randomizeButtonPositions() {
+        let buttons = document.querySelectorAll("FIXME");
+        buttons.forEach( (b) => {
+          b.style.left = (Math.random()*80+10)+"%";
+          b.style.top = (Math.random()*80+10)+"%";
+        } );
+      }
+      // Function to handle Dessert button click
+      function handleDessertClick() {
+        score++; // Increment score
+        document.querySelector("p").textContent = `Score: ${score}`; // Update score display
+        randomizeButtonPositions(); // Randomize button positions
+      }
+
+      // Function to handle Desert button click
+      function handleDesertClick() {
+        score--; // Decrement score
+        document.querySelector("p").textContent = `Score: ${score}`; // Update score display
+        randomizeButtonPositions(); // Randomize button positions
+    </script>
+    <meta name="author" content="KLIU337">
+  </head>
+  <body onload="randomizeButtonPositions()">
+    <p>Score: 0</p>
+    <button>Dessert</button>
+    <button>Dessert</button>
+    <button>Desert</button>
+    <button>Desert</button>
+    <button>Desert</button>
+    <button>Desert</button>
+    <button>Desert</button>
+    <button>Desert</button>
+    <button>Desert</button>
+  </body>
+</html>

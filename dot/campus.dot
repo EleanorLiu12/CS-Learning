@@ -1,0 +1,7 @@
+digraph campus {
+
+	"Comp Sci" -> "Union South"[seconds=15.4, label="15.4sec"];
+	"Comp Sci" -> "Discovery"[seconds=20, label="20sec"];
+	
+
+}
